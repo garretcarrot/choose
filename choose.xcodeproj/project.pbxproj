@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94DDE04E19F2B78F001A3B2E /* SDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DDE04D19F2B78F001A3B2E /* SDAppDelegate.m */; };
+		AC7F0297251E6576009FC2E3 /* choose_tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7F0296251E6576009FC2E3 /* choose_tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +28,20 @@
 		94DDE03E19F2AC4C001A3B2E /* choose */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = choose; sourceTree = BUILT_PRODUCTS_DIR; };
 		94DDE04819F2AC61001A3B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94DDE04D19F2B78F001A3B2E /* SDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		AC7F0294251E6576009FC2E3 /* choose-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "choose-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7F0296251E6576009FC2E3 /* choose_tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = choose_tests.m; sourceTree = "<group>"; };
+		AC7F0298251E6576009FC2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		94DDE03B19F2AC4C001A3B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F0291251E6576009FC2E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9438161C19F4007B0094D4E6 /* choose */,
+				AC7F0295251E6576009FC2E3 /* choose-tests */,
 				94DDE03F19F2AC4C001A3B2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,8 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				94DDE03E19F2AC4C001A3B2E /* choose */,
+				AC7F0294251E6576009FC2E3 /* choose-tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AC7F0295251E6576009FC2E3 /* choose-tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC7F0296251E6576009FC2E3 /* choose_tests.m */,
+				AC7F0298251E6576009FC2E3 /* Info.plist */,
+			);
+			path = "choose-tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +108,23 @@
 			productReference = 94DDE03E19F2AC4C001A3B2E /* choose */;
 			productType = "com.apple.product-type.tool";
 		};
+		AC7F0293251E6576009FC2E3 /* choose-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7F029B251E6576009FC2E3 /* Build configuration list for PBXNativeTarget "choose-tests" */;
+			buildPhases = (
+				AC7F0290251E6576009FC2E3 /* Sources */,
+				AC7F0291251E6576009FC2E3 /* Frameworks */,
+				AC7F0292251E6576009FC2E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "choose-tests";
+			productName = "choose-tests";
+			productReference = AC7F0294251E6576009FC2E3 /* choose-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +136,10 @@
 				TargetAttributes = {
 					94DDE03D19F2AC4C001A3B2E = {
 						CreatedOnToolsVersion = 6.0.1;
+					};
+					AC7F0293251E6576009FC2E3 = {
+						CreatedOnToolsVersion = 11.7;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -114,9 +157,20 @@
 			projectRoot = "";
 			targets = (
 				94DDE03D19F2AC4C001A3B2E /* choose */,
+				AC7F0293251E6576009FC2E3 /* choose-tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC7F0292251E6576009FC2E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94DDE03A19F2AC4C001A3B2E /* Sources */ = {
@@ -124,6 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				94DDE04E19F2B78F001A3B2E /* SDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7F0290251E6576009FC2E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC7F0297251E6576009FC2E3 /* choose_tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +319,51 @@
 			};
 			name = Release;
 		};
+		AC7F0299251E6576009FC2E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "choose-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.senkbeil.choose-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC7F029A251E6576009FC2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "choose-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.senkbeil.choose-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +381,15 @@
 			buildConfigurations = (
 				94DDE04619F2AC4C001A3B2E /* Debug */,
 				94DDE04719F2AC4C001A3B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC7F029B251E6576009FC2E3 /* Build configuration list for PBXNativeTarget "choose-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7F0299251E6576009FC2E3 /* Debug */,
+				AC7F029A251E6576009FC2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
